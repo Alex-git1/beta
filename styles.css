@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background: url('images/Cubes.png') no-repeat center center;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  padding: 8rem 5vw;
+  background-color: rgba(7, 28, 55, .6);
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px #000000;
+  border: 4px solid #8c6d51;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img:not(.google-img, .logo){
+  width: 250px;
+}
+
+.logo {
+  position: absolute;
+  top: -3.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.group1 h2 {
+  text-align: center;
+  margin-top: -5rem;
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  letter-spacing: 10px;
+  font-weight: 200;
+  font-size: 35px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+} 
+
+.input-group {
+  border-bottom: 1px solid #fff;
+}
+
+.inputs input[type="text"], input[type="password"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  height: 40px; 
+  letter-spacing: 2px;
+}
+
+.input-group input {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, .6);
+  letter-spacing: 5px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.input-group a {
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 1rem;
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  gap: 2px;
+}
+
+.remember label {
+  opacity: 0.7;
+}
+
+.remember input[type="checkbox"] {
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.autorization {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  background-color: #071c37;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px #000000;
+  border: 1px solid #000000;
+  padding: 1rem .5rem;
+  min-width: 220px;
+  font-size: 16px;
+  letter-spacing: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn1 {
+  padding: 1rem .5rem;
+  background-color: #d7d6ce;
+  border-radius: 30px;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.google-img {
+  width: 25px;
+  height: 25x;
+  border-radius: 0px;
+}
+
+.registration-link {
+  position: absolute;
+  bottom: 5px; left: 1.5rem;
+
+}
+
+.registration-link p {
+  color: #fff;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.registration-link a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.registration-link a:hover {
+  text-decoration: underline;
+}    
