@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 .container img:not(.google-img, .logo){
@@ -46,6 +46,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 100%;
 }
 
 .group1 h2 {
@@ -62,15 +63,20 @@
 
 .input-group {
   border-bottom: 1px solid #fff;
+  width: 100%;
+  display: flex;
 }
 
 .inputs input[type="text"], input[type="password"] {
+  flex: 1;
   border: none;
   outline: none;
   background: transparent;
   color: #fff;
   height: 40px; 
   letter-spacing: 2px;
+  width: 100%;
+  padding: 8px 10px;
 }
 
 .input-group input {
@@ -83,6 +89,16 @@ input::placeholder {
   letter-spacing: 5px;
   font-size: 15px;
   padding-left: 10px;
+}
+
+.input-group.password-group a {
+  position: relative;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 10px;
+  cursor: pointer;
+
 }
 
 .input-group a {
@@ -123,6 +139,7 @@ input::placeholder {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
 }
 
 .btn {
@@ -184,3 +201,92 @@ input::placeholder {
 .registration-link a:hover {
   text-decoration: underline;
 }    
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 3rem 4vw;
+    max-width: 90%;
+  }
+
+  .group1 h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+  }
+
+  .group-img {
+    width: 50%;
+    max-width: 150px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-group a {
+    position: static;
+    margin-top: 5px;
+  }
+
+  .inputs input[type="text"], 
+  .inputs input[type="password"] {
+    font-size: 14px;
+    height: 35px;
+  }
+
+  .btn, .btn1 {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .container {
+    flex-direction: column;
+  }
+  .logo {
+    width: 60px;
+    top: -40px;
+  }
+
+
+  .row {
+    flex-direction: column;
+  }
+  
+  .group1 h2 {
+    font-size: 22px;
+  }
+
+  .group-img {
+    width: 40%;
+    max-width: 120px;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .inputs input[type="text"], 
+  .inputs input[type="password"] {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+  
+  .input-group a {
+    position: static;
+    margin-top: 5px;
+  }
+
+  .btn, .btn1 {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .google-img {
+    left: 10px;
+    width: 18px;
+  }
+}
